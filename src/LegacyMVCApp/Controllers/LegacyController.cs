@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using LegacyMVCAPP.Auth;
+using System.Web.Mvc;
 
 namespace LegacyMVCApp.Controllers
 {
@@ -9,6 +10,9 @@ namespace LegacyMVCApp.Controllers
         }
         public ActionResult About()
         {
+
+            //HttpContext.Request.Cookies.
+
             return View();
         }
 
