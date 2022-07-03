@@ -1,5 +1,4 @@
-﻿using LegacyMVCAPP.Auth;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace LegacyMVCApp.Controllers
 {

@@ -1,8 +1,4 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-
-@if (SignInManager.IsSignedIn(User))
+﻿@if (User.Identity.IsAuthenticated)
 {
 
     <form class="form-inline" action="identity/account/logout" id="logoutForm">
@@ -21,10 +17,10 @@ else
 {
     <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
-            <a class="nav-link text-dark" href="/identity/account/register">Register</a>
+            <a class="nav-link text-dark" href="/account/register">Register</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" href="/identity/account/login">Login</a>
+            <a class="nav-link text-dark" href="/account/login">Login</a>
         </li>
     </ul>
 

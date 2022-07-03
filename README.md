@@ -16,4 +16,14 @@ The idea is to implement something called the [Strangler Fig pattern](https://do
 
 To have seemless transitions between new Net MVC routes and legacy Net Framework routes. 
 
+# Update 03/07/2022
 
+Microsoft must have been getting this a lot because they have updated thier tooling to support just that (in preview at time of update):
+
+Nuget Package Required: Microsoft.AspNetCore.SystemWebAdapters ]
+
+Documentation: 
+
+https://devblogs.microsoft.com/dotnet/incremental-asp-net-migration-tooling-preview-2/
+
+I have updated the codebase and all seems to work as expected. 

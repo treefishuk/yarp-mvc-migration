@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.SystemWebAdapters;
 using Microsoft.EntityFrameworkCore;
 using NewMVCApp.Data;
 
@@ -12,9 +15,20 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo("C:\\keyDirectory"))
+    .SetApplicationName("iis-app-name");
+
+builder.Services.AddSystemWebAdapters()
+    .AddRemoteAppAuthentication(true, options =>
+    {
+        options.RemoteServiceOptions.RemoteAppUrl =
+           new(builder.Configuration["ReverseProxy:Clusters:fallbackCluster:Destinations:fallbackApp:Address"]);
+        options.RemoteServiceOptions.ApiKey = "test-key";
+    });
+
 
 //Add YARP
 builder.Services.AddReverseProxy()

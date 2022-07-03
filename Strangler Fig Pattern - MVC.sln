@@ -5,7 +5,12 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewMVCApp", "src\NewMVCApp\NewMVCApp.csproj", "{2C9ACF58-E9D8-4D8C-A632-3CEE32D7469C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyMVCApp", "src\LegacyMVCApp\LegacyMVCApp.csproj", "{DEC8516E-D631-4E6F-A599-02D33084A2AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyMVCApp", "src\LegacyMVCApp\LegacyMVCApp.csproj", "{BC144B3A-F1DD-4F31-8E81-5CAE8AD128C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D02971E5-CFA2-49FC-BE28-227BA18DF8D2}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +22,10 @@ Global
 		{2C9ACF58-E9D8-4D8C-A632-3CEE32D7469C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C9ACF58-E9D8-4D8C-A632-3CEE32D7469C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C9ACF58-E9D8-4D8C-A632-3CEE32D7469C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEC8516E-D631-4E6F-A599-02D33084A2AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEC8516E-D631-4E6F-A599-02D33084A2AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEC8516E-D631-4E6F-A599-02D33084A2AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEC8516E-D631-4E6F-A599-02D33084A2AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC144B3A-F1DD-4F31-8E81-5CAE8AD128C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC144B3A-F1DD-4F31-8E81-5CAE8AD128C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC144B3A-F1DD-4F31-8E81-5CAE8AD128C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC144B3A-F1DD-4F31-8E81-5CAE8AD128C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
