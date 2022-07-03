@@ -20,7 +20,7 @@ To have seemless transitions between new Net MVC routes and legacy Net Framework
 
 Microsoft must have been getting this a lot because they have updated thier tooling to support just that (in preview at time of update):
 
-Nuget Package Required: Microsoft.AspNetCore.SystemWebAdapters ]
+Nuget Package Required: Microsoft.AspNetCore.SystemWebAdapters
 
 Documentation: 
 
